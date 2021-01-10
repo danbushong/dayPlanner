@@ -49,7 +49,7 @@ $(document).ready(function () {
         //sets the remainder of being divided by 12 to being the new hour
         hours = hours % 12;
 
-        //if hours equals hours display if not put 12
+        //if hours equals hours put the answer if not put 12
         hours = hours ? hours : 12;
 
         return hours + ampm;
@@ -62,6 +62,31 @@ $(document).ready(function () {
     //will change the color of the block
     function updateColors() {
 
+        var currentTime = new Date().getHours();
+
+        for (var i = 9; i < 18; i++) {
+
+            //use console log to store the exact time    
+            console.log(currentTime, $(`#${i}`).data("time"));
+
+            if ($(`#${i}`).data("time") == currentTime) {
+
+                $(`#text${i}`).addClass("present");
+
+            } else if (currentTime < $(`#${i}`).data("time")) {
+
+                $(`#text${i}`).addClass("future");
+
+
+
+            }
+        }
     }
-    
+    //should change color on each hour
+    setInterval(function () {
+
+        updateColors();
+
+    }, 1000);
+
 });
