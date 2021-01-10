@@ -59,5 +59,9 @@ $(document).ready(function () {
     //run the correction when the page loads    
     amPmCorrect();
 
+    //will change the color of the block
+    function updateColors() {
+
+    }
     
 });
