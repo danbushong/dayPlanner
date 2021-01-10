@@ -49,12 +49,15 @@ $(document).ready(function () {
         //sets the remainder of being divided by 12 to being the new hour
         hours = hours % 12;
 
-        //if hours equals hours display, if not put 12
+        //if hours equals hours display if not put 12
         hours = hours ? hours : 12;
 
         return hours + ampm;
     }
 
 
+    //run the correction when the page loads    
+    amPmCorrect();
 
+    
 });
