@@ -6,5 +6,9 @@ when you enter text into the add your event here and press the save icon the tex
 the text will remain when you reload the page
 the colors will change hourly, grey in the past, blue is current, and green is in the future.
 
+URL:
+https://danbushong.github.io/dayPlanner/
 
+screenshot
+https://github.com/danbushong/dayPlanner/blob/main/workDaySchedulerScreenshot.png
 
